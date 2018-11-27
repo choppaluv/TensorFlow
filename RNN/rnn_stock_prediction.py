@@ -69,7 +69,7 @@ def build_dataset(time_series, seq_length):
 
 
 trainX, trainY = build_dataset(train_set, seq_length)
-testX, testY = build_dataset(train_set, seq_length)
+testX, testY = build_dataset(test_set, seq_length)
 
 X = tf.placeholder(tf.float32, [None, seq_length, data_dim])
 Y = tf.placeholder(tf.float32, [None, 1])
